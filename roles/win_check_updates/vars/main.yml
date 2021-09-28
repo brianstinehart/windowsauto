@@ -1,4 +1,5 @@
 ---
+domain_admin_password: "MyP@ssw0rd21"
 category: ['Updates'] #good example of single item of list [SecurityUpdates, 'Updates'] for multiple
 gmail_account: "grdroyal22@gmail.com"
 gmail_account_password: "IlovetheBuckeyes22@"
