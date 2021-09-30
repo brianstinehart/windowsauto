@@ -1,5 +1,6 @@
 ---
 - name: "Search and return list of found updates (if any)"
+  remote_user: Administrator
   win_updates:
     category_names: "{{ category }}"
     state: searched
