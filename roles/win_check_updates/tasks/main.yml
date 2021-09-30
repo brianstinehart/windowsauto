@@ -9,7 +9,7 @@
   file:
     path: reports
     state: absent
-  delegate_to: localhost
+  connection: local
   run_once: yes
 
 - name: Create Reports Directory
