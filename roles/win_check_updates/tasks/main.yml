@@ -3,9 +3,6 @@
   win_updates:
     category_names: "{{ category }}"
     state: searched
-  register: list_of_updates
-
-- name: Clean Up Reports Directory if it exists
   ansible_user: "Administrator"
   ansible_password: "{{ ec2windows_password }}"
   ansible_become_password: "{{ domain_admin_password }}"
@@ -15,6 +12,9 @@
   ansible_shell_type: "cmd"
   ansible_winrm_transport: "ntlm"
   ansible_winrm_server_cert_validation: "ignore"
+  register: list_of_updates
+
+- name: Clean Up Reports Directory if it exists
   file:
     path: reports
     state: absent
