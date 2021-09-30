@@ -8,7 +8,7 @@
   ansible_become_password: "{{ domain_admin_password }}"
   domain_admin_password: "MyP@ssw0rd21"
   ansible_connection: "winrm"
-  ansible_port: "5986"
+  # ansible_port: "5986"
   ansible_shell_type: "cmd"
   ansible_winrm_transport: "ntlm"
   ansible_winrm_server_cert_validation: "ignore"
